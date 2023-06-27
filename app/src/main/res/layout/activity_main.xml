@@ -46,12 +46,72 @@
             android:layout_margin="10dp"
             android:padding="20dp"
             android:drawablePadding="20dp"
+            android:inputType="textPassword"
+
+
     />
 
-    <MaterialButton
+    <android.widget.Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/loginbtn"
         android:layout_below="@id/password"
+        android:text="LOGIN"
+
+        android:layout_centerHorizontal="true"
 />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/forgotpass"
+            android:layout_below="@id/loginbtn"
+            android:text="ForgotPassword"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+
+
+        />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/others"
+            android:layout_below="@id/loginbtn"
+            android:text="or sign in with"
+            android:layout_centerHorizontal="true"
+            android:layout_above="/socialicons"
+            android:textColor="@color/white"
+            android:layout_marginTop="363dp"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/socialicons"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+    >
+
+
+        <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/facebook"
+                />
+
+        <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/whatsapp"
+        />
+
+        <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/google"
+        />
+
+    </LinearLayout>
+
 </RelativeLayout>
